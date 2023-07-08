@@ -1,0 +1,28 @@
+/* 
+CSS HIERACHY
+
+INLINE > EXTERNAL & INTERNAL
+INTERNAL > EXTERNAL
+BOTTOM > TOP
+ID > CLASS & TAGS
+CLASS > TAGS
+INLINE > ID
+*/
+
+#wood{
+    color: red;
+    font-size: 20px;
+}
+#second{
+    color: green;
+    text-decoration: underline;
+    margin-left: 50px;
+}
+.different{
+    color: blueviolet;
+    font-size: 8px;
+}
+h1{
+    color: darkblue;
+    font-size: 10px;
+}
