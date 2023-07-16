@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+}
+/* THIS IS A COMMENT */
+.container{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+img{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+/* .icon{
+    transition: 1s;
+} */
+.icon:hover{
+    transform: rotate(270deg);
+}
+.img2:hover{
+    transform: scale(2);
+}
+.img3:hover{
+    transform: scale(0.25);
+}
+.img4:hover{
+    transform: translate(50px, 0px);
+}
+.img5:hover{
+    transform: translate(0px, -50px);
+}
+.img6:hover{
+    transform: translate(80px, 80px);
+}
+/* button:hover{
+    transform: scale(2);
+} */
+.shadow{
+    width: 60%;
+    border: 1px solid blue;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: red; */
+    box-shadow: 5px 5px 5px green;
+}
+.text{
+    margin: 20px 0;
+    font-size: 30px;
+    text-shadow: 3px 3px 1px purple;
+}
+.shadow1{
+    width: 60%;
+    border: 1px solid blue;
+    margin: 30px auto;
+    padding: 10px;
+    transition: 1s;
+}
+.shadow1:hover{
+    box-shadow: 15px -5px 5px orange;
+    transform: translate(70px, 30px);
+    text-shadow: -8px 5px 1px purple;
+}
+ #FIXED{
+    background-color: red;
+    color: white;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 5px;
+ }
+
+ #fixed{
+    background-color: black;
+    color: white;
+    border: none;
+    position: fixed;
+    bottom: 20%;
+    left: 200px;
+ }
+ .sidebar{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+ }
+ article p:nth-child(odd){
+    background-color: palegreen;
+ }
+
+ article p:nth-child(4), .join{
+    background-color: darkblue;
+    color: white;
+    position: static;
+    bottom: 20px;
+    position: absolute;
+ }
+.join{
+    background-color: orange;
+    font-size: 20px;
+}
+ .join:hover{
+    transform: translate(0px, 50px);
+    transition: 2s;
+ }
+ .new{
+    /* position: absolute; */
+    position: fixed;
+    top: 120px;
+    left: 50px;
+    /* position: static; */
+ }
+ .link{
+    position: absolute;
+    top: 20px;
+    background-color: black;
+    color: aliceblue;
+ }
+
+ .new:hover{
+    transform: translate(30px, 20px );
+    /* transform: rotate(40deg); */
+    /* transform: scale(3); */
+    transition: 1s;
+}
+.div-1, .div-2, .div-3{
+    width: 70vw;
+    height: 300px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    border: 3px solid black;
+}
+
+.div-2 input{
+    position: absolute;
+    left: 1px;
+    top: 20px;
+}
+.div-2{
+    position: relative;
+    background-color: red;
+}

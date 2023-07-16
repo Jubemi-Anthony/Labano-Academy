@@ -1,0 +1,83 @@
+*{
+    /* background-color: blue; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: blue;
+    background-color: red;
+    background-image: url("https://images.pexels.com/photos/17373688/pexels-photo-17373688/free-photo-of-humboldt-university-library.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"); */
+    /* color: white; */
+    /* background-color: red; */
+    background-image: url("https://images.pexels.com/photos/1743373/pexels-photo-1743373.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load");
+    /* background: url("https://images.pexels.com/photos/7603270/pexels-photo-7603270.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"); */
+    /* background-image: url(pexels-photo-17383443.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: bottom left; */
+}
+.first{
+    border: 1px solid white;
+    background-color: white;
+    color: white;
+    width: 90vw;
+    height: 60vh;
+    margin-bottom: 100px;
+    background-image: url("pexels-photo-17383443.webp"); 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?auto=compress&cs=tinysrgb&w=400");
+    /* background-color: #000000;
+    background-color: #ffffff;
+    background-color: #333333; */
+}
+.first a{
+    background-color: white;
+}
+.first a::after{
+    color: red;
+}
+.first:hover{
+    /* background-image: url("pexels-photo-17383443.webp");  */
+    transition: 3s;
+}
+
+.child p{
+    /* width: 50%;  */
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+.child p:hover{
+    color: green;
+    font-size: 60px;
+    border-bottom: 2px solid blue;
+}
+.short{
+    background-color: gold;
+    width: 50%;
+}
+.art{
+    height: 80vh;
+    margin: 100px 0;
+    color: red;
+    background: linear-gradient(to right, blue, green, violet, yellow, purple, white);
+    /* background: linear-gradient(#000, #f4f4f4, #333, #222, #fff); */
+}
+
+.last{
+    height: 60vh;
+    margin-bottom: 30px;
+    width: 100vw;
+    display: flex;
+}
+.last div{
+   width: 100%;
+   height: 100%; 
+}
+.left{
+    background: url("https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&w=400");
+}
+.right{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg?auto=compress&cs=tinysrgb&w=400");
+}
