@@ -1,0 +1,72 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),
+    url("https://cdn.wallpapersafari.com/23/67/51gE7b.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    width: 50vw;
+    margin: auto;
+    min-height: 60vh;
+    background: linear-gradient(rgba(2, 214, 214, 0.9), rgba(2, 149, 149, 0.584), rgba(2, 214, 214, 0.3));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+    background-color: rgb(7, 66, 53);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+input{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+#member{
+    text-transform: uppercase;
+}
+.input-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(7, 66, 53, 0.7);
+}
+button{
+    width: 80%;
+    border: none;
+    padding: 4px;
+}
+#login{
+    background-color: rgb(236, 234, 234);
+}
+#register{
+    background-color: rgb(2, 166, 166);
+}
+.forgot{
+    color: rgb(189, 188, 188);
+    font-size: 12px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.307);
+}
+.forgot a{
+    color: rgb(189, 188, 188);
+}
