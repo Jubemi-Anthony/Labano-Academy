@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="icon" id="sidebar" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-64.png" alt="sidebar">
+    
+        <header id="header" class="hide">
+            <p class="logo">Labano</p>
+            <nav>
+                <select name="categories" id="categories">
+                    <option value="Web Development">Web Development</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Data Analysis">Data Analysis</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                </select>
+                <a href="#">Contact Us</a>
+                <div class="search">
+                    <input id="searchInput" placeholder="Search Course" type="search">
+                    <img id="searchButton" class="icon" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-64.png" alt="search">
+                </div>
+                <div class="same">
+                    <img class="icon" src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-64.png" alt="account">
+                    <p>Account</p>
+                </div>
+                <div class="same">
+                    <img class="icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-64.png" alt="saved">
+                    <p>Saved <span id="savedNumber"></span></p>
+                </div>
+                <div id="CART_BUTTON" class="same">
+                    <img class="icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-cart-outline-64.png" alt="Cart">
+                    <p>Cart <span id="cartNumber"></span></p>
+                </div>
+            </nav>
+        </header>
+    <div class="container">
+        <main>
+            <section class="sec-1">
+                <div class="left">
+                    <p>Get a course for Upto 50% Off now.</p>
+                </div>
+                <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600" alt="course" class="right">
+            </section>
+            <section class="sec-2">
+                <h3>Courses for you!</h3>
+                <div id="courses">
+                    <!-- <div class="card">
+                        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-64.png" alt="heart" class="icon">
+                        <img class="card-img" src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="course">
+                        <div class="card-body">
+                            <div class="title">
+                                <p>Front End Course</p>
+                                <p>#2000</p>
+                            </div>
+                            <p class="description">Course about frone end dev</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <section class="invisible" id="CART_ITEMS">
+               <div class="cart-cont">
+                <h2>Cart Items</h2>
+                <div id="ALLITEMS" class="allItems">
+                    <!-- <div class="items">
+                        <div class="left">
+                            <img src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="item" class="small">
+                            <p>Introduction to Web Development</p>
+                        </div>
+                        <div class="middle">
+                            <button>+</button>
+                            <span id="amount">1</span>
+                            <button>-</button>
+                        </div>
+                        <div class="right">
+                            <p>#5000</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div id="total">
+                    <h2>Total</h2>
+                    <p id="TOTAL_PRICE">0</p>
+                </div>
+               </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script type="module" src="/scripts/index.js"></script>
+</html>

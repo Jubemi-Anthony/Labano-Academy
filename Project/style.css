@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.invisible{
+    display: none;
+}
+.newH1{
+    font-size: 0rem;
+    color: green;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sidebar{
+    display: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+header, nav, .search, .same{
+    display: flex;
+    align-items: center;
+}
+.same{
+    cursor: pointer;
+}
+header{
+    gap: 30px;
+    padding: 15px 0;
+    width: 90%;
+    margin: auto;
+}
+nav{
+    justify-content: space-between;
+    width: 100%;
+}
+select{
+    border: none;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+.logo{
+    font-size: 2rem;
+    color: blue;
+    font-weight: bold;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.search{
+    background-color: rgb(233, 231, 231);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.search input{
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+.search input:focus{
+    outline: none;
+}
+.sec-1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    min-height: 40vh;
+    background-color: rgb(251, 214, 220);
+    display: flex;
+    justify-content: space-between;
+    padding:  0 30px;
+    padding-top: 30px;
+}
+.sec-1 img{
+    width: 30%;
+}
+.sec-1 p{
+    font-size: 3rem;
+    font-weight: bold;
+    width: 50%;
+}
+.sec-2 h3{
+    margin-bottom: 30px;
+}
+#courses{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    font-weight: bold;
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+}
+.title{
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.description{
+    color: rgb(165, 164, 164);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.card button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card button:hover{
+    background-color: rgb(251, 214, 220);
+}
+.card{
+    position: relative;
+    margin-bottom: 10px;
+}
+.card .icon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#CART_ITEMS{
+    height: 80vh;
+    width: 70vw;
+    background-color: white;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    border: 1px solid black;
+}
+.cart-cont{
+    padding: 10px;
+}
+.cart-cont h2{
+    color: rgb(235, 127, 145);
+    margin-bottom: 20px;
+}
+.cart-cont .allItems{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cart-cont .allItems .left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.cart-cont .allItems .left img{
+    width: 150px;
+    height: 70px;
+}
+.cart-cont .allItems .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(235, 127, 145);
+    padding-bottom: 5px;
+}
+.cart-cont .allItems .items .middle{
+    display: flex;
+    gap: 7px;
+}
+.cart-cont .allItems .items .middle button,.cart-cont .allItems .items .middle span{
+    padding: 5px 11px;
+    border: none;
+    background-color: rgb(235, 127, 145);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.cart-cont .allItems .items .middle span{
+    color: black;
+}
+.cart-cont .allItems .items .right, #TOTAL_PRICE{
+    padding: 5px 10px;
+    background-color: rgb(251, 214, 220);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.left{
+    flex: 4;
+}
+.middle{
+    flex: 2;
+}
+.right{
+    flex: 1;
+}
+#total{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 700px){
+    header{
+        gap: 20px;
+        padding: 10px 0;
+        flex-direction: column;
+        background-color: rgb(251, 214, 220);
+        height: 100vh;
+        transition: 0.5s;
+        width: 100%;
+        position: absolute;
+        z-index: 8;
+        margin-top: -10px;
+    }
+    #sidebar{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 9;
+    }
+    .hide{
+        transform: translateX(-120%);
+        width: 100vw;
+    }
+    nav{
+        justify-content: space-between;
+        width: 100%;
+        height: 80vh;
+        flex-direction: column;
+    }
+    .sec-1{
+        margin-top: 0px;
+        flex-direction: column;
+        padding:  0 10px;
+        padding-top: 30px;
+    }
+    .sec-1 img{
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .sec-1 p{
+        font-size: 2rem;
+        font-weight: bold;
+        width: 100%;
+    }
+    .sec-2 h3{
+        margin-bottom: 30px;
+    }
+    #courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        font-weight: bold;
+    }
+    .card-img{
+        width: 100%;
+        height: 200px;
+    }
+    .title{
+        display: flex;
+        font-size: 0.9rem;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .description{
+        color: rgb(165, 164, 164);
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    .card button{
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 50px;
+        padding: 5px 10px;
+    }
+    .card{
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .card .icon{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 5px;
+        background-color: white;
+        border-radius: 100%;
+    }
+}
