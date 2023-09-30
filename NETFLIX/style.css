@@ -1,0 +1,283 @@
+:root{
+    --grey: #2d2d2d;
+    --red: #e50914;
+    --line-border: #232323;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+.sec-1{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url(./assets/background-top.jpg);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+}
+header a{
+    background-color: var(--red);
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: block;
+}
+header p{
+    color: var(--red);
+    font-size: 2rem;
+    font-weight: 900;
+}
+.unlimited{
+    text-align: center;
+}
+.unlimited h1{
+    font-size: 3.3rem;
+    font-weight: 900;
+    margin-top: 30vh;
+}
+.unlimited p{
+    font-size: 1.5rem;
+}
+.watch{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.ready{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.ready p{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.input{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.input input{
+    width: 70%;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(223, 222, 222);
+    color: rgb(197, 197, 197);
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.input button{
+    width: 30%;
+    padding: 20px 10px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.sec{
+    border-top: 10px solid var(--line-border);
+}
+.sec-5, .frequently{
+    border-bottom: 10px solid var(--line-border);
+}
+.sec .container{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    gap: 30px;
+}
+.sec h2{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+}
+.sec img{
+    width: 40%;
+}
+.sec-3 h2{
+    width: 90%;
+}
+.write p{
+    width: 70%;
+    font-size: 1.5rem;
+}
+.frequently{
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+.frequently h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+#DETAILS{
+    width: 70%;
+    /* margin: auto; */
+    margin: 40px auto;
+}
+details{
+    background-color: var(--grey);
+    margin-bottom: 10px;
+    padding: 30px;
+}
+details p{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+summary{
+    font-size: 1.5rem;
+}
+footer{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+footer a{
+    color: rgb(195, 195, 195);
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+footer ul{
+    list-style: none;
+}
+.links{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.links li{
+    margin-bottom: 20px;
+}
+footer select{
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 700px){
+    .sec-1{
+        min-height: 61vh;
+        padding-bottom: 50px;
+    }
+    header{
+        width: 90%;
+    }
+    header p{
+        font-size: 1.5rem;
+    }
+    .unlimited h1{
+        font-size: 1.5rem;
+        margin-top: 8vh;
+    }
+    .unlimited p{
+        font-size: 1.1rem;
+    }
+    .watch{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .ready{
+        width: 65%;
+        line-height: 1.6em;
+    }
+    .ready p{
+        font-size: 1.1rem;
+    }
+    .input{
+        width: 100%;
+        flex-direction: column;
+    }
+    .input input{
+        width: 100%;
+    }
+    .input button{
+        width: 70%;
+        margin: auto;
+    }
+    .sec .container{
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    .sec h2{
+        font-size: 1.8rem;
+    }
+    .sec img{
+        width: 90%;
+    }
+    .sec-3 h2{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .write p{
+        width: 80%;
+        margin: auto;
+        font-size: 1.1rem;
+    }
+    .sec-3 .container, .sec-5 .container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .frequently{
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    .frequently h2{
+        font-size: 1.5rem;
+        width: 90%;
+        margin: auto;
+    }
+    #DETAILS{
+        width: 90%;
+        margin: 20px auto;
+    }
+    details{
+        padding: 20px;
+    }
+    details p{
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+    summary{
+        font-size: 1.2rem;
+    }
+    footer{
+        width: 90%;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .links{
+        /* display: flex;
+        justify-content: space-between; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+    .links li{
+        margin-bottom: 15px;
+    }
+}
