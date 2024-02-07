@@ -1,0 +1,66 @@
+body{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: green;
+}
+li:nth-child(22){
+    color: brown;
+}
+li:nth-child(odd){
+    background-color: yellowgreen;
+}
+li:nth-child(even){
+    background-color: blueviolet;
+}
+
+/* h1:nth-child(5){
+    border: 1px solid black;
+} */
+input{
+    width: 300px;
+    height: 30px;
+    background-color: cornflowerblue;
+}
+input:focus{
+    background-color: chartreuse;
+}
+
+h1:nth-child(2):hover{
+    transition: 1s;
+    background-color: chocolate;
+}
+div{
+    transition: 0.5s;
+    width: 50%;
+    background-color: red;
+    margin: auto;
+    box-shadow: 20px 10px 5px rgba(0, 0, 255, 0.5);
+}
+
+button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 60px;
+    transition: 1s;
+}
+
+#b1:hover{
+    transform: rotate(360deg);
+}
+#b2:hover{
+    transform: translate(50px, 100px);
+}
+#b3:hover{
+    transform: scale(4);
+}
+img{
+    display: none;
+}

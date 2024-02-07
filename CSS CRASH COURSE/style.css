@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(209, 209, 209);
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+     url('https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.ant{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.text-00{
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-align: right;
+    text-align: left;
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration: overline;
+    text-decoration: underline;
+}
+
+main{
+    /* background: linear-gradient(red,orange,green,blue,indigo,violet); */
+    background-color: wheat;
+    color: black;
+    width: 100%;
+    min-height: 50vh;
+}
+main h3{
+    background-color: darkslateblue;
+    height: 50%;
+    width: 50%;
+    width: fit-content;
+}
+.yup{
+    background-color: darkred;
+    min-height: 40px;
+    color: white;
+}
+aside{
+    position: relative;
+    background: linear-gradient(to right, orange, pink);
+    height: 80vh;
+}
+aside h5{
+    font-size: 3rem;
+    color: red;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+}
+section{
+    background-color: darkblue;
+}
+
+ul{
+    list-style:lower-greek;
+    list-style: url(https://cdn0.iconfinder.com/data/icons/leto-survey-rating/64/__laptop_online_survey_checkmark_select-64.png);
+    list-style: none;
+}
+ol{
+    list-style: none;
+    list-style:lower-greek;
+}
+li{
+    color: rgb(200,100,21);
+}
+ol{
+    background-color: rgba(0, 0, 0, 0.99);
+}
+#lucky{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: 5px double white;
+    width: fit-content;
+   /* border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    padding-left: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+section .text-00{
+    border: 3px solid white;
+    font-weight: bold;
+    font-size: 2rem;
+    width: fit-content;
+    margin: 50px;
+    padding: 0 50px;
+    position: fixed;
+    bottom: 0%;
+    right: 40%;
+    background-color: whitesmoke;
+}
+img{
+    background-color: white;
+    border-radius: 50%;
+}
+#top{
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+}
+#menu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
