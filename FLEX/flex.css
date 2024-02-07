@@ -1,0 +1,126 @@
+body{
+    background-color: #f4f4f4;
+}
+h2{
+    font-size: 12px;
+    text-decoration: underline;
+}
+section{
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+section div div{
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+}
+section div div:first-child{
+    background-color: red;
+}
+
+section div div:nth-child(2){
+    background-color: orange;
+}
+section div div:nth-child(3){
+    background-color: yellow;
+}
+section div div:nth-child(4){
+    background-color: green;
+}
+section div div:nth-child(5){
+    background-color: blue;
+}
+.justify-center-r{
+    display: flex;
+    justify-content: center;
+}
+.justify-flex-start-r{
+    display: flex;
+    justify-content: flex-start;
+}
+/* .justify-flex-start-r div:first-child{
+    flex: 2;
+}
+.justify-flex-start-r div:last-child{
+    flex: 4;
+} */
+
+.justify-flex-end-r{
+    display: flex;
+    justify-content: flex-end;
+}
+.justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+.justify-around{
+    display: flex;
+    justify-content: space-around;
+}
+.justify-evenly{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.align-items-center-C{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
+    align-items: center;
+}
+/* .align-items-center-C div:first-child{
+    align-self: flex-start;
+}
+.align-items-center-C div:last-child{
+    align-self: flex-end;
+}
+.align-items-center-C div:nth-child(2){
+    align-self: stretch;
+} */
+.align-items-end-C{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.align-items-start-C{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.wrap div:nth-child(odd){
+    background-color: steelblue;
+}
+.wrap div:nth-child(even){
+    background-color: indigo;
+}
+.order{
+    display: flex;
+}
+.order div:first-child{
+    order: 3;
+}
+.order div:nth-child(2){
+    order: 5;
+}
+.order div:nth-child(3){
+    order: 1;
+}
+.order div:nth-child(4){
+    order: 2;
+}
+.order div:nth-child(5){
+    order: 4;
+}
+.center{
+    height: 50vh;
+    background-color: rgb(3, 255, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
