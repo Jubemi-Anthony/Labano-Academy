@@ -1,0 +1,173 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+}
+h1{
+    color: blue;
+    font-size: 2.2rem;
+    text-align: center;
+}
+form{
+    background-color: rgb(198, 198, 198);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 10px;
+}
+form input, form textarea{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+form textarea{
+    height: 100px;
+}
+form label{
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: blue;
+}
+form button{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    color: blue;
+    font-weight: bold;
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+#impact{
+    background-color: white;
+    padding: 30px 0;
+}
+#impact ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#impact ul li{
+    margin: auto;
+    width: 40%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 5px;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+#impact h3{
+    color: blue;
+}
+#impact ul li:hover{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+.section-1 h1{
+    color: white;
+}
+.section-1{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./atm\ in\ nature.jpg);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.big-bold{
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#brief{
+    font-family: monospace;
+    font-size: 1.2rem;
+    width: 95%;
+    margin: auto;
+}
+.change-me{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.change-me li{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+}
+.change-me li h1{
+    order: 2;
+    color: black;
+    margin: 0;
+    margin-top: 5px;
+}
+.change-me li img{
+    width: 100%;
+    order: 1;
+}
+.change-me li p{
+    order: 3;
+    font-size: 0.8rem;
+    padding: 0 5px;
+    text-align: center;
+}
+.change-me li video{
+    order: 4;
+    width: 100%;
+    height: 300px;
+}
+.separate{
+    display: flex;
+    gap: 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    padding-right: 10px;
+    background: linear-gradient(grey,rgb(185, 185, 185),#f2f2f2,#f2f2f2);
+}
+.separate div{
+    width: 50%;
+}
+.separate img{
+    width: 100%;
+    height: 450px;
+}
+.separate p{
+    width: 50%;
+    line-height: 1.4em;
+    font-family: monospace;
+}
